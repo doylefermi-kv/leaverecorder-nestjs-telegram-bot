@@ -1,0 +1,98 @@
+POST http://localhost:3000/employee-demo/user/signup
+content-type: application/json
+
+{
+  "id": 1,
+  "username": "dfermiagain",
+  "password": "dfermi",
+  "role": "ADMIN"
+}
+
+POST http://localhost:3000/employee-demo/user/login
+Content-Type: application/json
+
+{
+  "username": "dfermiagain",
+  "password": "dfermi"
+}
+
+GET http://localhost:3000/employee-demo/employee
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRmZXJtaWFnYWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjIwNTAzMDkxLCJleHAiOjE2MjA1MDY2OTF9.s_FfEcDm8ToaEmUUDt5DY17MIxQj7hFkBkhFEEpiZ3s
+
+POST http://localhost:3000/employee-demo/employee
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRmZXJtaWFnYWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjIwNTM3OTE2LCJleHAiOjE2MjA1NDE1MTZ9.aJwV3u1xDYQxXVMHofR8WzeIvk5aVpVzpAsWTV1_Fzk
+
+{
+  "telegramId": "123456789",
+  "firstName": "Doyle",
+  "lastName": "Fermi",
+  "gender": "Male",
+  "emailAddress": "doyle@keyvalue.systems"
+}
+
+POST http://localhost:3000/employee-demo/employee/123456789/recordleave
+Content-Type: application/json
+
+{
+  "startDate": "2021-08-25",
+  "endDate": "2021-08-25"
+}
+
+POST http://localhost:3000/employee-demo/leave
+Content-Type: application/json
+
+{
+  "telegramId": "268933846",
+  "startDate": "2021-08-25",
+  "endDate": "2021-08-25"
+}
+
+POST http://localhost:3000/employee-demo/employee
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRmZXJtaWFkbWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjIwNDc1MzMwLCJleHAiOjE2MjA0Nzg5MzB9.GUk9zaOeOj-KzKEuu0a9BIoVyxX9dan28Blt7Ga0mYA
+
+{
+  "id": 10003,
+  "birthDate": "1995-08-25T18:30:00.000Z",
+  "firstName": "Test1",
+  "lastName": "Test1",
+  "gender": "M",
+  "hireDate": "2021-05-04T18:30:00.000Z",
+
+}
+
+
+https://protected-island-09159.herokuapp.com/
+
+POST https://protected-island-09159.herokuapp.com/employee-demo/user/signup
+content-type: application/json
+
+{
+  "id": 1,
+  "username": "dfermiagain",
+  "password": "dfermi",
+  "role": "ADMIN"
+}
+
+POST https://protected-island-09159.herokuapp.com/employee-demo/user/login
+Content-Type: application/json
+
+{
+  "username": "dfermiagain",
+  "password": "dfermi"
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRmZXJtaWFnYWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjIwNTc2MTA0LCJleHAiOjE2MjA1Nzk3MDR9.k0nXzQByDIxBZfkuKaPXVjhJg-Ty_Xn85OdbFhCj4R0
+
+POST https://protected-island-09159.herokuapp.com/employee-demo/employee
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRmZXJtaWFnYWluIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjIwNTc2MTA0LCJleHAiOjE2MjA1Nzk3MDR9.k0nXzQByDIxBZfkuKaPXVjhJg-Ty_Xn85OdbFhCj4R0
+
+{
+  "telegramId": "268933846",
+  "firstName": "Doyle",
+  "lastName": "Fermi",
+  "gender": "Male",
+  "emailAddress": "doyle@keyvalue.systems"
+}
